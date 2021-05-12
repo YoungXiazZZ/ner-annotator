@@ -157,9 +157,6 @@ export default {
           ]);
           this.currentIndex++;
           this.tokenizeCurrentSentence();
-          this.$store.state.domain = ''
-          this.$store.state.intent = ''
-          this.$store.state.entity = ''
           this.$store.commit("setCurrentClass",'')
         })
         .catch((e) => {
